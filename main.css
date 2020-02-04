@@ -32,6 +32,12 @@ button {
   top: 5px;
 }
 
+ div.trim {
+     max-height:100px;
+     max-width: 50px;
+     overflow: hidden;
+ }
+
 a:link{
   color:green;
 }
