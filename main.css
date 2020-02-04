@@ -35,7 +35,6 @@ button {
  div.trim {
      max-width: 500px;
      overflow: hidden;
-     align-self: middle;
  }
 
 a:link{
