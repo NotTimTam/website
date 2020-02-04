@@ -10,6 +10,7 @@ div {
 }
 body {
     font: 100% Courier New;
+    color: rgb(0,0,0);
     margin: 20px;
     line-height: 26px;
     background-color: #000000;
