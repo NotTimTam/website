@@ -14,7 +14,10 @@ body {
     line-height: 26px;
     background-color: #000000;
 }
-h1 {
+title {
+  color: #FFFFFF;
+}
+h2 {
   color: #FFFFFF;
 }
 p {
