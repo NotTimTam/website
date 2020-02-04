@@ -33,7 +33,6 @@ button {
 }
 
  div.trim {
-     max-height:1000px;
      max-width: 500px;
      overflow: hidden;
  }
