@@ -26,6 +26,11 @@ h2 {
 body {
   color: #00FF00;
 }
+button {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
 user agent stylesheet
 html {
     color: -internal-root-color;
