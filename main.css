@@ -49,7 +49,11 @@ a:active{
 }
 
 #my-form-button{
-    display: inline-block;
+  display: inline-block;
+}
+
+#cforms{
+  display: inline-block;
 }
 
 user agent stylesheet
