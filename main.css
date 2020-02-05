@@ -48,6 +48,10 @@ a:active{
   color:red;
 }
 
+#my-form-button{
+    display: inline-block;
+}
+
 user agent stylesheet
 html {
     color: -internal-root-color;
