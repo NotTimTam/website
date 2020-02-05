@@ -45,7 +45,8 @@ a:active{
 
 form {
   border-radius: 5px;
-  background-color: grey; 
+  background-color: grey;
+  color: green;
   padding: 5px;
 }
 
