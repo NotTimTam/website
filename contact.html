@@ -30,15 +30,22 @@
 
 <body id="top">
 
-<form action="contact_form.php" method="post">
-    Your name<br>
-    <input type="text" name="cf_name"><br>
-    Your e-mail<br>
-    <input type="text" name="cf_email"><br>
-    Message<br>
-    <textarea type="text" name="cf_message"><br>
-    <input type="submit" value="Send">
-    <input type="reset" value="Clear">
+<form action="contact_form.php" method="POST">
+<p>Name</p> <input type="text" name="name">
+<p>Email</p> <input type="text" name="email">
+<p>Phone</p> <input type="text" name="phone">
+
+<p>Type</p>
+<select name="type" size="1">
+<option value="codecommission">Code Commission</option>
+<option value="artcommission">Art Commission</option>
+<option value="Question">Question</option>
+<option value="other">Other</option>
+</select>
+<br />
+
+<p>Message</p><textarea name="message" rows="6" cols="25"></textarea><br />
+<input type="submit" value="Send"><input type="reset" value="Clear">
 </form>
 
 </body>
