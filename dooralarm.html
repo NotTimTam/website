@@ -38,7 +38,7 @@
 <p>Plug the motion sensor into your computer (a usb-extension cable may be required). Now open the Command Prompt and type “mode” this will list the devices plugged into the computer. For me, the motion sensor was COM4. Create a PyCharm project and name it whatever you want. Notice that the code does require some packages that aren’t included with Python. Go ahead and download those using PIP. I created three files, “main.py,” “dooralert.py,” and “playsound.py.” First, we will edit the main file. Add this script to it:</p>
 
 <code>
-	<textarea>"""A python project to alert you if you door is open using the KANO Motion Sensor Kit.
+	<pre>"""A python project to alert you if you door is open using the KANO Motion Sensor Kit.
 Install the motion sensor behind the door, as it reads how close the door is to it backwards..
 
 THIS PROJECT REQUIRES THE KANO MOTION SENSOR KIT. IT WILL NOT WORK WITHOUT IT."""
@@ -88,11 +88,11 @@ while run:  # this code constantly checks the value of the sensor.
         run = False
     else:  # setting door_open to false otherwise...
         print("Nothing to report.")
-        print(str(proximity_opp) + "%")</textarea>
+        print(str(proximity_opp) + "%")</pre>
 </code>
 <p>Notice that “s” equals COM4. Change this if necessary. Also notice the “wait(0)” line. Edit this to add a delay so you can leave the room before the sensor starts detecting. Next, edit the “dooralert.py” file… Add this code to it:</p>
 <code>
-	<textarea>
+	<pre>
 		""" Child of door-alarm.py, go there for more information... """
 
 import datetime  # giving date and time information to the user.
@@ -117,11 +117,11 @@ def door_open_protocol():  # the code run when the door is seen as open in door-
     print("\nAdded above alert to", file.name + ", which can be found in the main folder")
     playsound.run_sound_alarm()
     file.close()
-	</textarea>
+	</pre>
 </code>
 <p>Finally, we will add some code to “playsound.py.”</p>
 <code>
-	<textarea>"""child of door-alarm.py. Go there for more info.
+	<pre>"""child of door-alarm.py. Go there for more info.
 This script will be uncommented to save time. Basically: it plays a noise when told to by door-alarm.py!"""
 
 import simpleaudio as sa
@@ -130,7 +130,7 @@ import time
 def run_sound_alarm():
     wave_obj = sa.WaveObject.from_wave_file("alert.wav")
     play_obj = wave_obj.play()
-    play_obj.wait_done()</textarea>
+    play_obj.wait_done()</pre>
 </code>
 <p>Notice that it requires the “simpleaudio” package to be installed. You must change the line “wave_obj” bit: “from_wave_file” to the correctly named file in your main directory that you want to play when the door alarm gets triggered.
 Make sure you have speakers set up with your computer and the volume turned up. Now hit start and open the door! The alarm goes off and information about the time and date the trigger happened is saved to an automatically created file called “alert_hst.txt”! Voilà, now you have a door sensor!
