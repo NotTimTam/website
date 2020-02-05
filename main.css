@@ -26,11 +26,6 @@ h4 {
 body {
   color: #00FF00;
 }
-button {
-  position: absolute;
-  right: 10px;
-  top: 5px;
-}
 
 a:link{
   color:green;
