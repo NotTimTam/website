@@ -50,7 +50,7 @@ form {
 }
 
 #cforms {
-  align-self: top;
+  vertical-align: top;
 }
 
 user agent stylesheet
