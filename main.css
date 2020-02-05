@@ -50,10 +50,12 @@ a:active{
 
 #my-form-button{
   display: inline-block;
+  float:left;
 }
 
 #cforms{
   display: inline-block;
+  float:left;
 }
 
 user agent stylesheet
