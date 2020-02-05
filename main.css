@@ -48,13 +48,13 @@ a:active{
   color:red;
 }
 
-input{
-  display: inline-block;
+#my-form-button{
+  display: inline;
   float:left;
 }
 
 #cforms{
-  display: inline-block;
+  display: inline;
   float:left;
 }
 
