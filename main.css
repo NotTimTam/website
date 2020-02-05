@@ -48,16 +48,6 @@ a:active{
   color:red;
 }
 
-#my-form-button{
-  display: inline;
-  float:left;
-}
-
-#cforms{
-  display: inline;
-  float:left;
-}
-
 user agent stylesheet
 html {
     color: -internal-root-color;
