@@ -38,7 +38,7 @@
 <p>Plug the motion sensor into your computer (a usb-extension cable may be required). Now open the Command Prompt and type “mode” this will list the devices plugged into the computer. For me, the motion sensor was COM4. Create a PyCharm project and name it whatever you want. Notice that the code does require some packages that aren’t included with Python. Go ahead and download those using PIP. I created three files, “main.py,” “dooralert.py,” and “playsound.py.” First, we will edit the main file. Add this script to it:</p>
 
 <code>
-	<textarea>"""A python project to alert you if you door is open using the KANO Motion Sensor Kit.
+	<textarea rows="50" cols="80">"""A python project to alert you if you door is open using the KANO Motion Sensor Kit.
 Install the motion sensor behind the door, as it reads how close the door is to it backwards..
 
 THIS PROJECT REQUIRES THE KANO MOTION SENSOR KIT. IT WILL NOT WORK WITHOUT IT."""
@@ -92,7 +92,7 @@ while run:  # this code constantly checks the value of the sensor.
 </code>
 <p>Notice that “s” equals COM4. Change this if necessary. Also notice the “wait(0)” line. Edit this to add a delay so you can leave the room before the sensor starts detecting. Next, edit the “dooralert.py” file… Add this code to it:</p>
 <code>
-	<textarea>
+	<textarea rows="50" cols="80">
 		""" Child of door-alarm.py, go there for more information... """
 
 import datetime  # giving date and time information to the user.
@@ -121,7 +121,7 @@ def door_open_protocol():  # the code run when the door is seen as open in door-
 </code>
 <p>Finally, we will add some code to “playsound.py.”</p>
 <code>
-	<textarea>"""child of door-alarm.py. Go there for more info.
+	<textarea rows="50" cols="80">"""child of door-alarm.py. Go there for more info.
 This script will be uncommented to save time. Basically: it plays a noise when told to by door-alarm.py!"""
 
 import simpleaudio as sa
