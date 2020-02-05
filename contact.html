@@ -30,22 +30,19 @@
 
 <body id="top">
 
-<form action="contact_form.php" method="POST">
-<p>Name</p> <input type="text" name="name">
-<p>Email</p> <input type="text" name="email">
+<div class="contact-form">
+<form action="contact_form.php" method="post">
+<div class="control-group"><label class="nameLabel" for="name">Name</label> <input id="name" name="name" type="text" /></div>
 
-<p>Type</p>
-<select name="type" size="1">
-<option value="codecommission">Code Commission</option>
-<option value="artcommission">Art Commission</option>
-<option value="Question">Question</option>
-<option value="other">Other</option>
-</select>
-<br />
+<div class="control-group"><label class="emailLabel" for="email">Email</label> <input id="email" name="email" type="text" /></div>
 
-<p>Message</p><textarea name="message" rows="6" cols="25"></textarea><br />
-<input type="submit" value="Send"><input type="reset" value="Clear">
+<div class="control-group"><label class="messageLabel" for="message">Message</label><textarea id="message" name="message"></textarea></div>
+
+<div class="control-group"><input type="submit" name="send" value="send"></div>
 </form>
+
+<h1 class="status-message-contact"></h1>
+</div>
 
 </body>
 </html>

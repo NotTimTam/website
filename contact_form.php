@@ -1,12 +1,32 @@
 <?php
-$name = $_POST['name'];
-$email = $_POST['email'];
-$type = $_POST['type'];
-$message = $_POST['message'];
-$formcontent=" From: $name \n Type: $type \n Message: $message";
-$recipient = "timmyiscool8@gmail.com";
-$subject = "Contact Form";
-$mailheader = "From: $email \r\n";
-mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
-echo "Thank You!" . " -" . "<a href='contact_form.html' style='text-decoration:none;color:#ff0099;'> Return </a>";
+ if(isset($_POST['submit']))
+ {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $query = $_POST['message'];
+    $email_from = $name.'<'.$email.'>';
+
+ $to="sarath.sarigama@gmail.com";
+ $subject="WEB Enquiry!";
+ $headers  = 'MIME-Version: 1.0' . "\r\n";
+ $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+ $headers .= "From: ".$email_from."\r\n";
+ $message="   
+
+         Name:
+         $name     
+         <br>
+         Email-Id:
+         $email        
+         <br>
+         Message:
+         $query        
+
+   ";
+    if(mail($to,$subject,$message,$headers))
+        header("Location:../index.php?msg=Successful Submission! Thankyou for contacting us.");
+    else
+        header("Location:../index.php?msg=Error To send Email !");
+        //contact:-your-email@your-domain.com
+ }
 ?>
