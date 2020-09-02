@@ -1,0 +1,9 @@
+{
+	"name": "Disco",
+	"short_name": "Disco",
+	"description": "",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff"
+}
