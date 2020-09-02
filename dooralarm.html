@@ -13,9 +13,14 @@
                 <div class="header-nav">
                     <nav>
                         <ul class="primary-nav">
-                            <a href="index.html">HOME</a>
-                            <a href="contact.html">CONTACT</a>
-                            <a href="programming.html">PROGRAMMING</a>
+                            <div class="dropdown">
+                                <button class="dropbtn">MENU</button>
+                                <div class="dropdown-content">
+                                    <a href="index.html">HOME</a>
+                                    <a href="contact.html">CONTACT</a>
+                                    <a href="programming.html">PROGRAMMING</a>
+                            </div>
+                            </div>
                         </ul>
                     </nav>
                 </div>
@@ -135,7 +140,7 @@ def run_sound_alarm():
 <p>Notice that it requires the “simpleaudio” package to be installed. You must change the line “wave_obj” bit: “from_wave_file” to the correctly named file in your main directory that you want to play when the door alarm gets triggered.
 Make sure you have speakers set up with your computer and the volume turned up. Now hit start and open the door! The alarm goes off and information about the time and date the trigger happened is saved to an automatically created file called “alert_hst.txt”! Voilà, now you have a door sensor!
 
-All the files can be found in .py format on the GitHub repository that can be downloaded free of charge!</p>
+All the files can be found in .py format on the GitHub repository that can be downloaded for free!</p>
 <a href="https://github.com/NotTimTam/KANO-Motion-Sensor-Door-Alarm">Github Project</a>
 </body>
 </html>

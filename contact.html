@@ -13,9 +13,14 @@
                 <div class="header-nav">
                     <nav>
                         <ul class="primary-nav">
-                            <a href="index.html">HOME</a>
-                            <a href="contact.html">CONTACT</a>
-                            <a href="programming.html">PROGRAMMING</a>
+                          <div class="dropdown">
+                            <button class="dropbtn">MENU</button>
+                            <div class="dropdown-content">
+                                <a href="index.html">HOME</a>
+                                <a href="contact.html">CONTACT</a>
+                                <a href="programming.html">PROGRAMMING</a>
+                        </div>
+                        </div>
                         </ul>
                     </nav>
                 </div>
@@ -34,12 +39,12 @@
   action="https://formspree.io/xwkobvea"
   method="POST"
 >
-  <h3>Need to get in-touch? I take art and programming commissions as well!</h3>
-  <label>Email:</label>
-  <input id="cforms" type="email" name="email" />
-  <label>Message:</label>
-  <textarea id="cforms" style="vertical-align:top" type="message" name="message"></textarea>
-  <button id="my-form-button">Submit</button>
+  <h2>Need to get in-touch via email?</h2>
+  <label style="vertical-align:top">Email:</label>
+  <input id="cforms" type="email" name="email" class="input"/>
+  <label style="vertical-align:top">Message:</label>
+  <textarea id="cforms" style="vertical-align:bottom" type="message" name="message" class="input"></textarea>
+  <button id="my-form-button" class="submit-button">Submit</button>
   <p id="my-form-status"></p>
 </form>
 
@@ -93,12 +98,12 @@
   }
 </script>
 
-<a href="https://twitter.com/NotTimTam">Twitter: @NotTimTam</a>
-<a href="https://www.instagram.com/not.tim.tam/">Instagram: @not.tim.tam</a>
-<a href="https://discord.app">Discord: @TimTam#2120</a>
-<a href="https://github.com/NotTimTam">Github: @NotTimTam</a>
-
 <hr>
+
+<a href="https://twitter.com/NotTimTam" class="button-three">Twitter: @NotTimTam</a>
+<a href="https://www.instagram.com/not.tim.tam/" class="button-three">Instagram: @not.tim.tam</a>
+<a href="https://discord.app" class="button-three">Discord: @TimTam#2120</a>
+<a href="https://github.com/NotTimTam" class="button-three">Github: @NotTimTam</a>
 
 </body>
 </html>
