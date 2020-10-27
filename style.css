@@ -7,6 +7,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 .txt-center {
@@ -16,6 +17,7 @@ html, body {
 body {
     background-color: var(--background);
     color: white;
+    overflow-x: hidden;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -24,17 +26,26 @@ ul {
     padding: 0px;
 }
 
-a {
+.a {
     color: orange;
     text-decoration: none;
     margin: 10px;
 }
 
-a:hover {
+.a:hover {
     color: white;
 }
 
-a:active {
+.nav li {
+    transition-property: transform;
+    transition-duration: 0.3s;
+}
+
+.nav li:hover {
+    transform: scale(1.1);
+}
+
+.a:active {
     color: orangered;
 }
 
@@ -51,6 +62,11 @@ header {
     position: sticky;
     left: 0;
     top: 0;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 1.5em;
 }
 
 .nav {
@@ -65,7 +81,7 @@ header {
 }
 
 main {
-    min-height: calc(100vh - 227px);
+    min-height: calc(100vh - 217px);
     margin: 0 auto;
 }
 
@@ -74,4 +90,26 @@ main article {
     padding: 50px;
     padding-left: 20%;
     padding-right: 20%;
+}
+
+/* CONTENT CSS */
+
+.shakey {
+    animation-name: shake;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
