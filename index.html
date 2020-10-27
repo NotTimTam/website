@@ -36,15 +36,17 @@
             </p>
         </article>
 
-        <div style="text-align: center; margin-top: 500px;"><p>Why are you scrolling.</p></div>
-        <div style="text-align: center; margin-top: 500px;"><p>There's nothing down there.</p></div>
-        <div style="text-align: center; margin-top: 500px;"><p>Seriously, you are wasting your time.</p></div>
-        <div style="text-align: center; margin-top: 500px;"><p>Just click one of those nav buttons and see something more interesting.</p></div>
-        <div style="text-align: center; margin-top: 500px;"><p>Go away now.</p></div>
-        <div style="text-align: center; margin-top: 500px;"><p>Back off.</p></div>
-        <div style="text-align: center; margin-top: 500px;"><p>Stop scrolling!</p></div>
-        <div style="text-align: center; margin-top: 500px;"><p>😠</p></div>
-        <div style="text-align: center; margin-top: 500px;"><p>😡</p></div>
+        <div id="overlay"></div>
+
+        <div style="text-align: center; margin-top: 500px; font-weight: bolder; text-transform: uppercase;"><p>Why are you scrolling?</p></div>
+        <div style="text-align: center; margin-top: 500px; font-weight: bolder; text-transform: uppercase;"><p>There's nothing down there.</p></div>
+        <div style="text-align: center; margin-top: 500px; font-weight: bolder; text-transform: uppercase;"><p>Seriously, you are wasting your time.</p></div>
+        <div style="text-align: center; margin-top: 500px; font-weight: bolder; text-transform: uppercase;"><p>Just click one of those nav buttons and see something more interesting.</p></div>
+        <div style="text-align: center; margin-top: 500px; font-weight: bolder; text-transform: uppercase;"><p>Go away now.</p></div>
+        <div style="text-align: center; margin-top: 500px; font-weight: bolder; text-transform: uppercase;"><p>Back off.</p></div>
+        <div style="text-align: center; margin-top: 500px; font-weight: bolder; text-transform: uppercase;"><p>Stop scrolling!</p></div>
+        <div style="text-align: center; margin-top: 500px; font-weight: bolder; text-transform: uppercase;"><p>😠</p></div>
+        <div style="text-align: center; margin-top: 500px; font-weight: bolder; text-transform: uppercase;"><p>😡</p></div>
         <div class="shakey" style="text-align: center; margin-top: 500px;"><p>👿</p></div>
         <div style="text-align: center; margin-top: 500px;"><p>I give up...</p></div>
     </main>
@@ -53,5 +55,9 @@
         <p>© 2020, Tim Phillips</p>
         <a class="a" href="#top">RETURN TO TOP</a>
     </footer>
+
+    <script>
+        document.getElementById("overlay").style = `background: url("images/backoverlay${Math.floor(Math.random() * 2) + 1}.png"); height: 800px; background-size: 256px; background-repeat: repeat-x;`
+    </script>
 </body>
 </html>
