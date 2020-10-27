@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='author' content='Tim Phillips'>
+    <meta name='description' content='A portfolio website belonging to Tim Phillips.'>
+
+    <meta property='og:image' content='favicon.png'>
+    <meta property='og:description' content='A portfolio website belonging to Tim Phillips.'>
+
+    <meta property='og:title' content='TimTam'>
+    <title>TimTam</title>
+
+    <link rel='stylesheet' href='../../style.css'>
+    <link rel='shortcut icon' href='favicon.png' type='image/x-icon'>
+
+    <style>
+        .animation {
+            margin: 0 auto;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            width: 256px;
+            align-content: center;
+            display: flex;
+            padding: 50px;
+            background-color: white;
+            border-radius: 2em;
+        }
+
+        .face {
+            background-color: #ffcc4d;
+            width: 256px;
+            height: 256px;
+            border-radius: 10em;
+
+            transition-property: background-color;
+            transition-duration: 1s;
+
+            border: 5px solid black;
+        }
+
+        .face:hover {
+            background-color: #cf4440;
+        }
+
+        .eye {
+            background-color: #090504;
+            width: 32px;
+            height: 52px;
+            border-radius: 3em;
+
+            transition-property: background-color transform;
+            transition-duration: 1s;
+
+            position: relative;
+        }
+
+        .mouth {
+            background-color: #090504;
+            width: 128px;
+            height: 32px;
+            border-radius: 3em;
+
+            transition-property: background-color transform;
+            transition-duration: 1s;
+
+            position: relative;
+            left: 60px;
+            top: 60px;
+        }
+
+        .left {
+            left: 60px;
+            top: 60px;
+        }
+
+        .right {
+            left: 155px;
+            top: 7px;
+        }
+
+        .face:hover .left {
+            top: 80px;
+        }
+
+        .face:hover .right {
+            top: 27px;
+        }
+    </style>
+</head>
+<body>
+    <span id="top"></span>
+    <header>
+        <nav>
+            <h1 class="txt-center">T I M T A M</h1>
+
+            <ul class="nav">
+                <li><a class="a" href="../../index.html">HOME</a></li>
+                <li><a class="a" href="../../portfolio.html">PORTFOLIO</a></li>
+                <li><a class="a" href="../../projects.html">PROJECTS</a></li>
+                <li><a class="a" href="../../contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h1>Emoji Animation</h1>
+        </article>
+
+        <div class="animation">
+            <div class="face">
+                <div class="eye left"></div>
+                <div class="eye right"></div>
+                <div class="mouth"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2020, Tim Phillips</p>
+        <a class="a" href="#top">RETURN TO TOP</a>
+    </footer>
+</body>
+</html>

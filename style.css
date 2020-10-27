@@ -121,3 +121,34 @@ main article {
     position: absolute;
     border-radius: 4em;
 }
+
+.section {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 5px;
+}
+
+.flexparent {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.flexchild {
+    width: 150px;
+    height: 200px;
+    padding: 5px;
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+
+.flexchild:hover {
+    width: 150px;
+    height: 200px;
+    padding: 5px;
+    transform: scale(1.1);
+}
