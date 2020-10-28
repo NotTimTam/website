@@ -43,7 +43,7 @@
             border: 5px solid black;
         }
 
-        .face:hover {
+        .anim1:hover .face {
             background-color: #cf4440;
         }
 
@@ -69,11 +69,11 @@
             top: 7px;
         }
 
-        .face:hover .left {
+        .anim1:hover .face .left {
             top: 70px;
         }
 
-        .face:hover .right {
+        .anim1:hover .face .right {
             top: 17px;
         }
 
@@ -92,7 +92,7 @@
             border-radius: 0em;
         }
 
-        .face:hover .brow {
+        .anim1:hover .face .brow {
             background-color: #090504;
             height: 24px;
             width: 96px;
@@ -110,13 +110,13 @@
             left: 35px;
         }
 
-        .face:hover .browleft {
+        .anim1:hover .face .browleft {
             transform: rotate(26deg);
             height: 24px;
             left: 20px;
         }
 
-        .face:hover .browright {
+        .anim1:hover .face .browright {
             transform: rotate(-26deg);
             left: 35px;
         }
@@ -145,7 +145,7 @@
             top: 70px;
         }
 
-        .face:hover .mouthright {
+        .anim1:hover .face .mouthright {
             transform: skewY(20deg);
             height: 24px;
             left: 122px;
@@ -153,7 +153,7 @@
             border-radius: 0.3em;
         }
 
-        .face:hover .mouthleft {
+        .anim1:hover .face .mouthleft {
             transform: skewY(-20deg);
             height: 24px;
             left: 44px;
@@ -197,13 +197,13 @@
             top: 7px;
         }
 
-        .face2:hover .right2 {
+        .anim2:hover .face2 .right2 {
             background-color: white;
             width: 52px;
             left: 145px;
         }
 
-        .face2:hover .left2 {
+        .anim2:hover .face2 .left2 {
             height: 20px;
             width: 64px;
             left: 40px;
@@ -283,11 +283,11 @@
             top: -245px;
         }
 
-        .face2:hover .tonguebottom {
+        .anim2:hover .face2 .tonguebottom {
             height: 120px;
         }
 
-        .face2:hover .tonguehide {
+        .anim2:hover .face2 .tonguehide {
             top: -365px;
         }
 
@@ -303,7 +303,7 @@
 
         }
 
-        .face2:hover .small {
+        .anim2:hover .face2 .small {
             width: 32px;
             height: 32px;
         }
@@ -324,7 +324,7 @@
             transform: rotate(-20deg);
         }
 
-        .face3:hover {
+        .anim3:hover .face3 {
             transform: rotate(1420deg);
         }
 
@@ -520,7 +520,7 @@
         <h3 style="text-align: center;"><div class="mousemove" style="display: inline-block">🖱️</div> Hover over the emojis with your mouse to see their animations.</h3>
         
         <div class="flexparent">
-            <div class="animation">
+            <div class="animation anim1">
                 <div class="face">
                     <div class="brow browleft"></div>
                     <div class="brow browright"></div>
@@ -531,7 +531,7 @@
                 </div>
             </div>
 
-            <div class="animation">
+            <div class="animation anim2">
                 <div class="face2">
                     <div class="eye2 left2"></div>
                     <div class="eye2 right2"></div>
@@ -545,7 +545,7 @@
                 </div>
             </div>
 
-            <div class="animation">
+            <div class="animation anim3">
                 <div class="face3">
                     <div class="eye3 left3"></div>
                     <div class="eye3 right3"></div>
