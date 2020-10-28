@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='author' content='Tim Phillips'>
+    <meta name='description' content='A portfolio website belonging to Tim Phillips.'>
+
+    <meta property='og:image' content='favicon.png'>
+    <meta property='og:description' content='A portfolio website belonging to Tim Phillips.'>
+
+    <meta property='og:title' content='TimTam'>
+    <title>TimTam</title>
+
+    <link rel='stylesheet' href='../../style.css'>
+    <link rel='shortcut icon' href='favicon.png' type='image/x-icon'>
+
+    <style>
+        .animation {
+            margin: 0 auto;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            align-content: center;
+            display: flex;
+            padding: 50px;
+            background-color: white;
+            border-radius: 2em;
+        }
+
+        .mouseclick {
+            animation-name: mouseclicks;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes mouseclicks {
+            0% { transform: scale(1); }
+            50% { transform: scale(0.8); }
+            100% { transform: scale(1); }
+        }
+
+        .pizza {
+            transition-property: transform border;
+            transition-duration: 1s;
+
+            width: 0;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-top: 200px solid tan;
+        }
+
+        .animation:hover .pizza {
+            border-left: 125px solid transparent;
+            border-right: 125px solid transparent;
+            border-top: 200px solid red;
+            transform: rotateY(180deg);
+        }
+
+        .rind {
+            transition-property: transform border;
+            transition-duration: 1s;
+
+            width: 0;
+            height: 0;
+            background: none;
+            border-left: 85px solid transparent;
+            border-right: 85px solid transparent;
+            border-top: 180px solid yellow;
+            position: relative;
+            left: -85px;
+            top: -185px;
+        }
+
+        .animation:hover .pizza .rind {
+            left: -124px;
+            top: -200px;
+            border-top: 10px solid green;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            width: 238px;
+        }
+
+        .pep {
+            transition-property: transform width height background-color border-radius;
+            transition-duration: 1s;
+
+            background-color: red;
+            width: 32px;
+            height: 32px;
+            border-radius: 3em;
+
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        .animation:hover .pizza .pep {
+            background-color: black;
+            width: 8px;
+            height: 16px;
+            border-radius: 0.3em;
+        }
+
+        .pep1 {
+            left: -70px;
+            top: -360px;
+        }
+
+        .pep2 {
+            left: 0px;
+            top: -350px;
+        }
+
+        .pep3 {
+            left: -20px;
+            top: -320px;
+        }
+
+        .animation:hover .pizza .pep1 {
+            left: -40px;
+            top: -150px;
+        }
+
+        .animation:hover .pizza .pep2 {
+            left: 40px;
+            top: -180px;
+        }
+
+        .animation:hover .pizza .pep3 {
+            left: 0px;
+            top: -100px;
+        }
+
+    </style>
+</head>
+<body>
+    <span id="top"></span>
+    <header>
+        <nav>
+            <h1 class="txt-center">T I M T A M</h1>
+
+            <ul class="nav">
+                <li><a class="a" href="../../index.html">HOME</a></li>
+                <li><a class="a" href="../../portfolio.html">PORTFOLIO</a></li>
+                <li><a class="a" href="../../projects.html">PROJECTS</a></li>
+                <li><a class="a" href="../../contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h1>Pizza Animation</h1>
+            <p>An example of a pizza slice beign transitioned into a watermelon slice, made entirely out of HTML divs and CSS transitions.</p>
+        </article>
+
+        <h3 style="text-align: center;"><div class="mouseclick" style="display: inline-block">🖱️</div> Hover over the pizza to see the animation.</h3>
+        
+        <div class="flexparent">
+            <div class="animation">
+                <div class="pizza">
+                    <div class="rind"></div>
+                    <div class="pep pep1"></div>
+                    <div class="pep pep2"></div>
+                    <div class="pep pep3"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2020, Tim Phillips</p>
+        <a class="a" href="#top">RETURN TO TOP</a>
+    </footer>
+</body>
+</html>
