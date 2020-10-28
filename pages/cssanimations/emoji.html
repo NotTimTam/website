@@ -304,6 +304,175 @@
             width: 32px;
             height: 32px;
         }
+
+        /* Anim 3 */
+        .face3 {
+            margin-top: 10px;
+            background-color: #ffcc4d;
+            width: 256px;
+            height: 245px;
+            border-radius: 10em;
+
+            transition-property: background-color transform;
+            transition-duration: 3s;
+
+            border: 5px solid black;
+
+            transform: rotate(-20deg);
+        }
+
+        .face3:hover {
+            transform: rotate(1420deg);
+        }
+
+        .eye3 {
+            background-color: #090504;
+            width: 52px;
+            height: 52px;
+            border-radius: 3em;
+
+            transition-property: background-color transform margin-bottom;
+            transition-duration: 1s;
+
+            position: relative;
+
+            z-index: 1;
+        }
+
+        .left3 {
+            left: 45px;
+            top: 60px;
+        }
+
+        .right3 {
+            left: 150px;
+            top: 7px;
+        }
+
+        
+        .mouth3hide {
+            background-color: #ffcc4d;
+            width: 160px;
+            height: 82px;
+            border-radius: 0em;
+
+            position: relative;
+            left: 45px;
+            top: -204px;
+            z-index: 0;
+        }
+
+        .mouth3bottom {
+            background-color: #090504;
+            width: 160px;
+            height: 160px;
+            border-radius: 18em;
+
+            position: relative;
+            left: 45px;
+            top: -40px;
+        }
+
+        .mouth3teeth {
+            background-color: white;
+            width: 140px;
+            height: 20px;
+
+            position: relative;
+            left: 55px;
+            top: -200px;
+        }
+
+        .mouth3tongue {
+            background-color: #cf4440;
+            width: 45px;
+            height: 35px;
+            border-radius: 5em;
+
+            position: relative;
+            left: 103px;
+            top: -185px;
+        }
+        
+        .eye3hiderleft {
+            background-color: #ffcc4d;
+            width: 32px;
+            height: 32px;
+            transform: rotate(-45deg);
+
+            position: relative;
+            left: 40px;
+            top: -34px;
+            z-index: 2;
+        }
+
+        .eye3hiderright {
+            background-color: #ffcc4d;
+            width: 32px;
+            height: 32px;
+            transform: rotate(-45deg);
+
+            position: relative;
+            left: 175px;
+            top: -67px;
+            z-index: 2;
+        }
+
+        .mouth3 {
+            position: relative;
+            top: -67px;
+        }
+
+        .tear1 {
+            background-color: #6dc4f0;
+            width: 32px;
+            height: 32px;
+            border-radius: 5em;
+
+            position: relative;
+            left: -4px;
+            top: -370px;
+
+            transform: rotate(-40deg);
+        }
+
+        .tear2 {
+            background-color: #6dc4f0;
+            width: 32px;
+            height: 32px;
+            border-radius: 5em;
+
+            position: relative;
+            left: 218px;
+            top: -400px;
+
+            transform: rotate(40deg);
+        }
+        
+        .tearcorner1 {
+            background-color: #6dc4f0;
+            width: 22px;
+            height: 22px;
+
+            position: relative;
+            left: 11px;
+            top: 5px;
+
+            transform: rotate(45deg);
+        }
+
+        .tearcorner2 {
+            background-color: #6dc4f0;
+            width: 22px;
+            height: 22px;
+
+            position: relative;
+            left: -1px;
+            top: 5px;
+
+            transform: rotate(45deg);
+        }
+
     </style>
 </head>
 <body>
@@ -336,6 +505,7 @@
                     <div class="mouth mouthright"></div>
                 </div>
             </div>
+
             <div class="animation">
                 <div class="face2">
                     <div class="eye2 left2"></div>
@@ -347,6 +517,27 @@
                     <div class="tongue"></div>
                     <div class="tonguebottom"></div>
                     <div class="tonguehide"></div>
+                </div>
+            </div>
+
+            <div class="animation">
+                <div class="face3">
+                    <div class="eye3 left3"></div>
+                    <div class="eye3 right3"></div>
+                    <div class="eye3hiderleft"></div>
+                    <div class="eye3hiderright"></div>
+                    <div class="mouth3">
+                        <div class="mouth3bottom"></div>
+                        <div class="mouth3hide"></div>
+                        <div class="mouth3teeth"></div>
+                        <div class="mouth3tongue"></div>
+                    </div>
+                    <div class="tear1">
+                        <div class="tearcorner1"></div>
+                    </div>
+                    <div class="tear2">
+                        <div class="tearcorner2"></div>
+                    </div>
                 </div>
             </div>
         </div>
