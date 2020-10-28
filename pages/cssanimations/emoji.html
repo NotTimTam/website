@@ -27,6 +27,7 @@
             border-radius: 2em;
         }
 
+        /* Anim 1 */
         .face {
             background-color: #ffcc4d;
             width: 256px;
@@ -155,6 +156,154 @@
             left: 44px;
             border-radius: 0.3em;
         }
+
+        /* Anim 2 */
+        .face2 {
+            background-color: #ffcc4d;
+            width: 256px;
+            height: 256px;
+            border-radius: 10em;
+
+            transition-property: background-color;
+            transition-duration: 1s;
+
+            border: 5px solid black;
+        }
+
+        .eye2 {
+            background-color: #090504;
+            width: 32px;
+            height: 52px;
+            border-radius: 3em;
+
+            transition-property: background-color transform margin-bottom;
+            transition-duration: 1s;
+
+            position: relative;
+
+            z-index: 1;
+        }
+
+        .left2 {
+            left: 60px;
+            top: 60px;
+        }
+
+        .right2 {
+            left: 155px;
+            top: 7px;
+        }
+
+        .face2:hover .right2 {
+            background-color: white;
+            width: 52px;
+            left: 145px;
+        }
+
+        .face2:hover .left2 {
+            height: 20px;
+            width: 64px;
+            left: 40px;
+            top: 75px;
+            transform: rotate(-10deg);
+            margin-bottom: 32px;
+        }
+
+        .mouth2hide {
+            background-color: #ffcc4d;
+            width: 160px;
+            height: 82px;
+            border-radius: 0em;
+
+            transition-property: background-color transform border-radius;
+            transition-duration: 1s;
+
+            position: relative;
+            left: 45px;
+            top: -214px;
+            z-index: 0;
+        }
+
+        .mouth2bottom {
+            background-color: #090504;
+            width: 160px;
+            height: 160px;
+            border-radius: 18em;
+
+            transition-property: background-color transform border-radius;
+            transition-duration: 1s;
+
+            position: relative;
+            left: 45px;
+            top: -50px;
+        }
+
+        .tongue {
+            background-color: #cf4440;
+            width: 72px;
+            height: 32px;
+            border-radius: 0em;
+
+            transition-property: background-color transform border-radius;
+            transition-duration: 1s;
+
+            position: relative;
+            left: 90px;
+            top: -210px;
+        }
+
+        .tonguehide {
+            background-color: #090504;
+            width: 72px;
+            height: 5px;
+            border-radius: 0em;
+
+            transition-property: background-color transform border-radius;
+            transition-duration: 1s;
+
+            position: relative;
+            left: 90px;
+            top: -335px;
+        }
+
+        .tonguebottom {
+            background-color: #cf4440;
+            width: 72px;
+            height: 90px;
+            border-radius: 4em;
+
+            transition-property: background-color transform height border-radius;
+            transition-duration: 1s;
+
+            position: relative;
+            left: 90px;
+            top: -245px;
+        }
+
+        .face2:hover .tonguebottom {
+            height: 120px;
+        }
+
+        .face2:hover .tonguehide {
+            top: -365px;
+        }
+
+        .small {
+            transition-property: background-color transform border-radius;
+            transition-duration: 1s;
+
+            width: 0px;
+            height: 32px;
+
+            left: 155px;
+            top: -35px;
+
+        }
+
+        .face2:hover .small {
+            width: 32px;
+            height: 32px;
+        }
     </style>
 </head>
 <body>
@@ -176,15 +325,29 @@
         <article>
             <h1>Emoji Animations</h1>
         </article>
+        <div class="flexparent">
+            <div class="animation">
+                <div class="face">
+                    <div class="brow browleft"></div>
+                    <div class="brow browright"></div>
+                    <div class="eye left"></div>
+                    <div class="eye right"></div>
+                    <div class="mouth mouthleft"></div>
+                    <div class="mouth mouthright"></div>
+                </div>
+            </div>
+            <div class="animation">
+                <div class="face2">
+                    <div class="eye2 left2"></div>
+                    <div class="eye2 right2"></div>
+                    <div class="eye2 small"></div>
+                    <div class="mouth2bottom"></div>
+                    <div class="mouth2hide"></div>
 
-        <div class="animation">
-            <div class="face">
-                <div class="brow browleft"></div>
-                <div class="brow browright"></div>
-                <div class="eye left"></div>
-                <div class="eye right"></div>
-                <div class="mouth mouthleft"></div>
-                <div class="mouth mouthright"></div>
+                    <div class="tongue"></div>
+                    <div class="tonguebottom"></div>
+                    <div class="tonguehide"></div>
+                </div>
             </div>
         </div>
     </main>
