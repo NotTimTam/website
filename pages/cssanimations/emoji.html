@@ -473,6 +473,20 @@
             transform: rotate(45deg);
         }
 
+        .mousemove {
+            animation-name: mousemoves;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes mousemoves {
+            0% { transform: rotate(-10deg); }
+            25% { transform: scale(1.5); }
+            50% { transform: rotate(10deg) scale(1); }
+            75% { transform: scale(0.8); }
+            100% { transform: rotate(-10deg); }
+        }
+
     </style>
 </head>
 <body>
@@ -493,7 +507,11 @@
     <main>
         <article>
             <h1>Emoji Animations</h1>
+            <p>Some examples of animations using CSS transitions and HTML divs only.</p>
         </article>
+
+        <h3 style="text-align: center;"><div class="mousemove" style="display: inline-block">🖱️</div> Hover over the emojis with your mouse to see their animations.</h3>
+        
         <div class="flexparent">
             <div class="animation">
                 <div class="face">
