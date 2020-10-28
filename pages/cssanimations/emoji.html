@@ -55,20 +55,6 @@
             position: relative;
         }
 
-        .mouth {
-            background-color: #090504;
-            width: 128px;
-            height: 32px;
-            border-radius: 3em;
-
-            transition-property: background-color transform;
-            transition-duration: 1s;
-
-            position: relative;
-            left: 60px;
-            top: 60px;
-        }
-
         .left {
             left: 60px;
             top: 60px;
@@ -130,6 +116,45 @@
             transform: rotate(-26deg);
             left: 35px;
         }
+
+        .mouth {
+            background-color: #090504;
+            width: 82px;
+            height: 32px;
+            border-radius: 2em;
+
+            transition-property: background-color transform border-radius;
+            transition-duration: 1s;
+
+            position: relative;
+            left: 60px;
+            top: 60px;
+        }
+
+        .mouthright {
+            left: 110px;
+            top: 38px;
+        }
+
+        .mouthleft {
+            left: 54px;
+            top: 70px;
+        }
+
+        .face:hover .mouthright {
+            transform: skewY(20deg);
+            height: 24px;
+            left: 122px;
+            top: 46px;
+            border-radius: 0.3em;
+        }
+
+        .face:hover .mouthleft {
+            transform: skewY(-20deg);
+            height: 24px;
+            left: 44px;
+            border-radius: 0.3em;
+        }
     </style>
 </head>
 <body>
@@ -149,7 +174,7 @@
 
     <main>
         <article>
-            <h1>Emoji Animation</h1>
+            <h1>Emoji Animations</h1>
         </article>
 
         <div class="animation">
@@ -158,7 +183,8 @@
                 <div class="brow browright"></div>
                 <div class="eye left"></div>
                 <div class="eye right"></div>
-                <div class="mouth"></div>
+                <div class="mouth mouthleft"></div>
+                <div class="mouth mouthright"></div>
             </div>
         </div>
     </main>
