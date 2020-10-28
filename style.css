@@ -176,3 +176,7 @@ main article {
     padding: 5px;
     transform: scale(1.1);
 }
+
+.roundcorner {
+    border-radius: 2em;
+}

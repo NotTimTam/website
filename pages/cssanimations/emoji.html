@@ -25,6 +25,9 @@
             padding: 50px;
             background-color: white;
             border-radius: 2em;
+
+            transition-property: border-radius;
+            transition-duration: 1s;
         }
 
         /* Anim 1 */
@@ -485,6 +488,10 @@
             50% { transform: rotate(10deg) scale(1); }
             75% { transform: scale(0.8); }
             100% { transform: rotate(-10deg); }
+        }
+
+        .animation:hover {
+            border-radius: 11em;
         }
 
     </style>
