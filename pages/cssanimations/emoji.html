@@ -80,11 +80,49 @@
         }
 
         .face:hover .left {
-            top: 80px;
+            top: 70px;
         }
 
         .face:hover .right {
-            top: 27px;
+            top: 17px;
+        }
+
+        .brow {
+            transition-property: background-color background width height transform;
+            transition-duration: 1s;
+
+            position: relative;
+            left: 60px;
+            top: 60px;
+
+            background-color: #00000000;
+            width: 0px;
+            height: 0px;
+            border-radius: 3em;
+        }
+
+        .face:hover .brow {
+            background-color: #090504;
+            height: 24px;
+            width: 96px;
+        }
+
+        .browleft {
+            float: left;
+            left: 20px;
+        }
+
+        .browright {
+            float: right;
+            right: 60px;
+        }
+
+        .face:hover .browleft {
+            transform: rotate(26deg);
+        }
+
+        .face:hover .browright {
+            transform: rotate(-26deg);
         }
     </style>
 </head>
@@ -110,6 +148,8 @@
 
         <div class="animation">
             <div class="face">
+                <div class="brow browleft"></div>
+                <div class="brow browright"></div>
                 <div class="eye left"></div>
                 <div class="eye right"></div>
                 <div class="mouth"></div>
