@@ -88,7 +88,7 @@
         }
 
         .brow {
-            transition-property: background-color background width height transform;
+            transition-property: background-color border-radius background height transform;
             transition-duration: 1s;
 
             position: relative;
@@ -98,13 +98,17 @@
             background-color: #00000000;
             width: 0px;
             height: 0px;
-            border-radius: 3em;
+            border-radius: 0em;
+
+            height: 0px;
         }
 
         .face:hover .brow {
             background-color: #090504;
             height: 24px;
             width: 96px;
+
+            border-radius: 3em;
         }
 
         .browleft {
@@ -113,16 +117,19 @@
         }
 
         .browright {
-            float: right;
-            right: 60px;
+            float: left;
+            left: 35px;
         }
 
         .face:hover .browleft {
             transform: rotate(26deg);
+            height: 24px;
+            left: 20px;
         }
 
         .face:hover .browright {
             transform: rotate(-26deg);
+            left: 35px;
         }
     </style>
 </head>
