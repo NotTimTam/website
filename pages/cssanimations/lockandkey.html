@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='author' content='Tim Phillips'>
+    <meta name='description' content='A portfolio website belonging to Tim Phillips.'>
+
+    <meta property='og:image' content='favicon.png'>
+    <meta property='og:description' content='A portfolio website belonging to Tim Phillips.'>
+
+    <meta property='og:title' content='TimTam'>
+    <title>TimTam</title>
+
+    <link rel='stylesheet' href='../../style.css'>
+    <link rel='shortcut icon' href='favicon.png' type='image/x-icon'>
+
+    <style>
+        .animation {
+            margin: 0 auto;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            align-content: center;
+            display: flex;
+            padding: 50px;
+            max-height: 256px;
+            background-color: white;
+            border-radius: 2em;
+        }
+
+        .animation * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .locktop {
+            transition-property: all;
+            transition-duration: 1s;
+
+            background-color: lightslategray;
+            width: 128px;
+            height: 128px;
+            border-radius: 3em;
+
+            z-index: 1;
+        }
+
+        .locktopround {
+            transition-property: all;
+            transition-duration: 1s;
+
+            background-color: lightslategray;
+            width: 64px;
+            height: 128px;
+
+            position: relative;
+
+            top: -60px;
+            left: 64px;
+
+            z-index: 1;
+        }
+
+        .locktophider {
+            transition-property: all;
+            transition-duration: 1s;
+
+            background-color: white;
+            width: 86px;
+            height: 256px;
+            border-radius: 2em;
+
+            position: relative;
+
+            top: -235px;
+            left: 21px;
+
+            z-index: 1;
+        }
+
+        .lockbox {
+            transition-property: all;
+            transition-duration: 1s;
+
+            background-color: #cd7f32;
+            width: 148px;
+            height: 120px;
+            border-radius: 1em;
+
+            position: relative;
+
+            top: -430px;
+            left: -9px;
+
+            z-index: 2;
+        }
+
+        .keytip {
+            transition-property: all;
+            transition-duration: 0.5s;
+
+            background-color: #FFD700;
+            width: 16px;
+            height: 82px;
+            border-radius: 0.5em;
+
+            position: relative;
+
+            top: -500px;
+            left: 60px;
+
+            z-index: 1;
+        }
+
+        .keyround {
+            transition-property: all;
+            transition-duration: 0.5s;
+
+            background-color: #FFD700;
+            width: 32px;
+            height: 32px;
+            border-radius: 2em;
+
+            position: relative;
+
+            top: 72px;
+            left: -8px;
+
+            z-index: 1;
+        }
+
+        .animation:hover .lockbox {
+            top: -380px;
+        }
+
+        .animation:hover .keytip {
+            transform: rotateY(180deg) rotateZ(90deg);
+            top: -400px;
+            left: 90px;
+        }
+
+        .locktopper {
+            transition-property: all;
+            transition-duration: 2s;
+
+            position: relative;
+            left: 0px;
+        }
+
+        .animation:hover .locktopper {
+            transform: rotateY(50deg);
+
+            left: 8px;
+        }
+
+        .mousemove {
+            animation-name: mousemoves;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes mousemoves {
+            0% { transform: rotate(-10deg); }
+            25% { transform: scale(1.5); }
+            50% { transform: rotate(10deg) scale(1); }
+            75% { transform: scale(0.8); }
+            100% { transform: rotate(-10deg); }
+        }
+    </style>
+</head>
+<body>
+    <span id="top"></span>
+    <header>
+        <nav>
+            <h1 class="txt-center">T I M T A M</h1>
+
+            <ul class="nav">
+                <li><a class="a" href="../../index.html">HOME</a></li>
+                <li><a class="a" href="../../portfolio.html">PORTFOLIO</a></li>
+                <li><a class="a" href="../../projects.html">PROJECTS</a></li>
+                <li><a class="a" href="../../contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h1>Lock & Key Animation</h1>
+            <p>An example of a lock and key animation. Made entirely out of HTML divs and CSS transitions.</p>
+        </article>
+
+        <h3 style="text-align: center;"><div class="mousemove" style="display: inline-block">🖱️</div> Hover over the lock and key to see the animation.</h3>
+        
+        <div class="flexparent">
+            <div class="animation">
+                <div class="lock">
+                    <div class="locktopper">
+                        <div class="locktop"></div>
+                        <div class="locktopround"></div>
+                        <div class="locktophider"></div>
+                    </div>
+                    <div class="lockbox"></div>
+                    <div class="keytip"><div class="keyround"></div></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2020, Tim Phillips</p>
+        <a class="a" href="#top">RETURN TO TOP</a>
+    </footer>
+</body>
+</html>
